@@ -12,7 +12,12 @@ end
 
 def update_counting_hash(hash, key)
   if hash[key]
-else
+    hask[key] = hash[key] + 1
+  else
+    hash[key] = 1 
+  end
+  hash 
+end
   
   # given a hash an a key as parameters, return an updated half
   # if the provided key is not present in the hash, add it and assign it to the value of 1
